@@ -1,5 +1,8 @@
-<img src="https://invent.kde.org/kde/kturtle/raw/master/src/turtle.svg" align="right"
-     title="Kturtle logo" width="64" height="64">
+<img src="icons/64-apps-kturtle.png" align="left"
+     title="Kturtle logo">
+
+### this is kturtle-myopia fork targeting near-sighted programmers
+<ins>i devise another one made with GTK-4 and including kinda compiler [note: this fork differs from original app only by accessibility features, cannot promise being in sync with KDE though]<ins/>
 
 KTurtle is an educational programming environment that uses TurtleSpeak, a programming language loosely based on and inspired by [LOGO](http://en.wikipedia.org/wiki/Logo_programming_language).
 
