@@ -93,6 +93,10 @@ public:
 private:
     QTextEdit *editor;
     int maxWidth;
+    void setFontSize(int size);
+    void setFontStyle(const QString &style);
+    void setFontColor(const QColor &color);
+    void setBackgroundColor(const QColor &color);
 };
 
 // END class LineNumbers
