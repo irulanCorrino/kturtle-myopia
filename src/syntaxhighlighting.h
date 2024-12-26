@@ -1,0 +1,1 @@
+/* syntax highlighting UI dialog. designed by irulanCorrino with an aid from OpenHands AI assistant */
