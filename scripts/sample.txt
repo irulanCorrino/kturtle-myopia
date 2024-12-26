@@ -1,0 +1,26 @@
+#by irulanCorrino & openHandsAI
+# Define a function to draw an equilateral triangle
+learn triangle $side, $parent {
+        $value = $side / 3
+        repeat 3 {
+            forward $side
+            turnright 90
+            forward mod ($value + $side), 20
+            if $parent { triangle $value, false }
+            backward mod ($value + $side), 20
+            turnleft 90
+            turnright 120
+            $value = $value * 2
+        }
+    }
+# Ask the user for the side length of the triangle
+$side = ask "Input length"
+reset
+spritehide
+# Check if the input is valid
+if ($side != 0) {
+    # Draw the triangle
+    triangle $side, true
+   }
+
+exit
