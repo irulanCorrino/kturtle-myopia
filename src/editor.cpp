@@ -98,6 +98,34 @@ void Editor::disable() {
 }
 
 
+void Editor::setFontSize(int size) {
+    QFont font = editor->document()->defaultFont();
+    font.setPointSize(size);
+    editor->document()->setDefaultFont(font);
+    editor->setFont(font);
+}
+
+
+void Editor::setFontStyle(const QString &style) {
+    QFont font = editor->document()->defaultFont();
+    font.setStyleName(style);
+    editor->document()->setDefaultFont(font);
+    editor->setFont(font);
+}
+
+void Editor::setFontColor(const QColor &color) {
+    QPalette p = editor->palette();
+    p.setColor(QPalette::Text, color);
+    editor->setPalette(p);
+}
+
+
+void Editor::setBackgroundColor(const QColor &color) {
+    QPalette p = editor->palette();
+    p.setColor(QPalette::Base, color);
+    editor->setPalette(p);
+}
+
 
 void Editor::setContent(const QString& s)
 {
